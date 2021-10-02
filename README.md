@@ -4,9 +4,10 @@ Blog Project: Building Microservice from scratch using node js , Docker, Docker 
 # To Build a Docker File
 docker build .
 
-# or(Better way to attach a tag)To Build a Docker File
-docker build -t blog_microservice/posts .
-docker build -t blog_microservice/event_bus .
+# OR To create/build an Image (Better way to attach a tag)using a Docker File 
+docker build -t <dockerhub ID>/blog_microservice_posts .
+docker build -t <dockerhub ID>/blog_microservice_eventBus .
+
 
 # To Run the
 docker run <imageid / image tag>
@@ -50,3 +51,7 @@ docker container stop dd526582d2dd
 8. kubectl describe deployment [deployment name]
 9. kubectl apply -f [config file name]
 10. kubectldelete deployment [deployment name]
+
+
+# Docker Hub Commands
+docker push <docker hub id>/image name

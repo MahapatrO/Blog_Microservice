@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: posts
-        image: blog_microservice/posts
+        image: soumyadip29/blog_microservice_posts
